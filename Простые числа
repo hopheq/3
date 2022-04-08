@@ -1,0 +1,20 @@
+package org.example;
+
+public class Untitled {
+    public static void main(String[] args) {
+        int x = 11;
+        int i;
+        boolean composite = false;
+        for (i = 2; i < x; i++) {
+            if (x % i == 0) {
+                composite = true;
+                break;
+            }
+        }
+        if (composite) {
+            System.out.println("число составное");
+        } else {
+            System.out.println("число  простое");
+        }
+    }
+}
