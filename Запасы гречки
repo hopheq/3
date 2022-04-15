@@ -1,0 +1,22 @@
+package org.example;
+
+public class Untitled {
+    public static void main(String[] args) {
+        final int buckwheatStocks = 100;
+        final int StorageCostPerMonth = 100;
+        final int eatsInAMonth = 6;
+        final int allPrice = 0;
+
+        for (; buckwheatStocks > 0; ) {
+            if (buckwheatStocks >= 0) {
+                allPrice = allPrice +(buckwheatStocks * StorageCostPerMonth);
+            } else {
+                buckwheatStocks = buckwheatStocks + eatsInAMonth;
+                allPrice = allPrice + (buckwheatStocks * StorageCostPerMonth);
+                break;
+            }
+            buckwheatStocks = buckwheatStocks - eatsInAMonth;
+        }
+        System.out.println("allPrice = " + allPrice;
+    }
+}
